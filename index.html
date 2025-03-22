@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multiplication Table Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Multiplication Table Generator</h1>
+    <div class="container">
+      <label for="numberInput">Enter a number:</label>
+      <input type="number" id="numberInput" placeholder="Enter a positive number">
+      <button id="generateBtn">Generate Table</button>
+      <div id="message" class="error"></div>
+      <div id="tableOutput"></div>
+    </div>
+    
+    <!-- Button to navigate back to Home page -->
+    <div class="home-btn-container">
+      <a href="index.html">
+        <button id="homeBtn">Exit</button>
+      </a>
+    </div>
+    
+    <!-- Submit Assignment Modal Trigger -->
+    <button id="submitAssignmentBtn">Submit Assignment</button>
+    
+    <!-- Modal for Assignment Submission -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2>Submit Your Assignment</h2>
+        <form id="submitForm">
+          <label for="repoLink">Repository Link:</label>
+          <input type="url" id="repoLink" placeholder="Enter your repository URL" required>
+          
+          <label for="liveLink">Live Site Link:</label>
+          <input type="url" id="liveLink" placeholder="Enter your live site URL" required>
+          
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
